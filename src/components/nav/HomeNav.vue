@@ -289,20 +289,19 @@ export default {
 
 <style scoped>
 .nav-item {
-  width: 680px;
+  width: 80vw;
   height: 36px;
   margin: 0px auto;
 }
 .nav-item ul {
   list-style: none;
-  margin-left: 15px;
+  display: flex;
+  justify-content: space-around;
 }
 .nav-item li {
   float: left;
   font-size: 16px;
   font-weight: bold;
-
-  margin-left: 30px;
 }
 .nav-item a {
   text-decoration: none;
@@ -313,12 +312,12 @@ export default {
 }
 /*大的导航信息，包含导航，幻灯片等*/
 .nav-body {
-  width: 1020px;
+  width: 90vw;
   height: 485px;
   margin: 0px auto;
 }
 .nav-side {
-  width: 200px;
+  width: 22vw;
   height: 100%;
   padding: 0px;
   color: #fff;
@@ -347,18 +346,19 @@ export default {
 
 /*导航内容*/
 .nav-content {
-  width: 792px;
-  margin-left: 15px;
+  width: 66vw;
+  margin-left: 2vw;
   overflow: hidden;
   float: left;
 }
 /*导航图片*/
-.nav-show-img {
-  margin-top: 10px;
-  float: left;
+.nav-show {
+  display: flex;
+  justify-content: space-around;
 }
-.nav-show-img:nth-child(2) {
-  margin-left: 12px;
+.nav-show-img {
+  margin-top: 1vh;
+  width: 30vw;
 }
 /*显示商品*/
 .content {

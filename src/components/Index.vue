@@ -51,6 +51,7 @@
             </li>
           </ul>
         </div>
+        <div class="item-class-all">
         <div class="item-class-content" v-for="(item, index) in computer.detail" :key="index">
           <div class="item-content-top">
             <div class="item-big-img">
@@ -80,6 +81,7 @@
             </div>
           </div>
         </div>
+        </div>
       </div>
       <!-- 爱吃专场 -->
       <div class="item-class">
@@ -91,6 +93,7 @@
             </li>
           </ul>
         </div>
+        <div class="item-class-all">
         <div class="item-class-content" v-for="(item, index) in eat.detail" :key="index">
           <div class="item-content-top">
             <div class="item-big-img">
@@ -117,6 +120,7 @@
               </router-link>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </div>
@@ -172,7 +176,7 @@ export default {
   background-color: #F6F6F6;
 }
 .content {
-  width: 1008px;
+  width: 90vw;
   margin: 0px auto;
 }
 /*****************************秒杀专栏开始*****************************/
@@ -254,14 +258,15 @@ export default {
 }
 
 .seckill-content {
-  width: 100%;
+  width: 90vw;
   height: 280px;
+  display: flex;
+  justify-content: space-around;
 }
 .seckill-item {
-  width: 183px;
+  width: 15vw;
   height: 250px;
   margin-top: 15px;
-  margin-left: 15px;
   box-shadow: 0px 0px 8px #ccc;
   cursor: pointer;
   float: left;
@@ -304,14 +309,14 @@ export default {
 
 /*****************************商品专栏开始*****************************/
 .item-class {
-  width: 100%;
+  width: 90vw;
   height: 470px;
   margin-top: 15px;
   background-color: #fff;
 }
 .item-class-head {
-  width: 100%;
-  height: 50px;
+  width: 90vw;
+  height: 7vh;
   background-color: #4488a7;
 }
 .item-class-eat-head {
@@ -348,13 +353,14 @@ export default {
   color: #fff;
   margin-left: 15px;
 }
+.item-class-all {
+  display: flex;
+  justify-content: space-between;
+}
 .item-class-content {
-  width: 49%;
+  width: 42vw;
   cursor: pointer;
   border-right: 1px solid #ccc;
-  margin-left: 0.9%;
-  /*background-color: #cff;*/
-  float: left;
 }
 .item-class-content:nth-child(odd) {
   border: none;
