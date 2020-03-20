@@ -39,9 +39,6 @@
           </div>
         </div>
         <div class="clearfix"></div>
-        <div class="copyright">
-          <p>Copyright © 2018 by Gavin <a href="https://github.com/PowerDos"><Icon type="social-github"></Icon></a> <span>本项目仅供学习参考</span></p>
-        </div>
       </div>
     </footer>
   </div>
@@ -166,15 +163,4 @@ export default {
 .link-last-item {
   border: none;
 }
-.copyright {
-  width: 100%;
-  color: #666;
-  line-height: 30px;
-  text-align: center;
-}
-.copyright a{
-  color: #232323;
-  font-size: 20px;
-}
-/*****************************底 部 结 束*****************************/
 </style>
