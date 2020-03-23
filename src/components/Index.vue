@@ -360,17 +360,13 @@ export default {
 .item-class-content {
   width: 42vw;
   cursor: pointer;
-  border-right: 1px solid #ccc;
-}
-.item-class-content:nth-child(odd) {
-  border: none;
 }
 .item-content-top {
   width: 100%;
   height: 260px;
 }
 .item-big-img {
-  width: 180px;
+  width: 15vw;
   height: 260px;
   overflow: hidden;
   float: left;
@@ -384,7 +380,7 @@ export default {
   transition: margin-left 0.3s;
 }
 .item-four-img {
-  width: 303px;
+  width: 30vw;
   margin-left: 8px;
   float: left;
 }
@@ -438,14 +434,13 @@ export default {
   color: #00695c;
 }
 .item-content-bottom {
-  width: 100%;
+  display: flex;
+  flex-direction: row;
   margin-top: 8px;
 }
 .item-content-bottom-img {
-  width: 156px;
-  margin-right: 8px;
+  width: 15vw;
   overflow: hidden;
-  float: left;
 }
 .item-content-bottom-img img {
   margin-left: 0px;

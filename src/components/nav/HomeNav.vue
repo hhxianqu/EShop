@@ -322,7 +322,7 @@ export default {
   padding: 0px;
   color: #fff;
   float: left;
-  background-color: #6e6568;
+  background-color: black;
 }
 .nav-side ul {
   width: 100%;
@@ -337,7 +337,7 @@ export default {
   line-height: 18px;
 }
 .nav-side li:hover {
-  background: #999395;
+  background: #979797;
 }
 .nav-side-item:hover {
   cursor: pointer;
@@ -366,7 +366,7 @@ export default {
 }
 /*显示商品详细信息*/
 .detail-item-panel {
-  width: 815px;
+  width: 85vw;
   height: 485px;
   background-color: #fff;
   position: absolute;

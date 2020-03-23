@@ -141,7 +141,7 @@ export default {
 .box {
   width: 100%;
   height: 35px;
-  background-color: #e3e4e5;
+  background-color: black;
 }
 .nav {
   margin: 0% auto;
@@ -162,7 +162,7 @@ export default {
 }
 .nav a {
   text-decoration: none;
-  color: #999999;
+  color: white;
   padding-left: 15px;
   border-left: 1px solid #ccc;
   cursor: pointer;
@@ -174,13 +174,13 @@ export default {
   color: #d9534f;
 }
 .location {
-  color: #999999;
+  color: white;
 }
 .icon {
   color: #d9534f;
 }
 .first {
-  color: #999999;
+  color: white;
 }
 .first a:first-child {
   padding-left: 3px;
@@ -202,7 +202,7 @@ export default {
   background-color:  #f0cdb2;
 }
 .username {
-  color: #999999;
+  color: white;
 }
 .shopping-cart-list {
   padding: 3px 15px;
@@ -236,10 +236,10 @@ export default {
   overflow: hidden;
   font-size: 12px;
   line-height: 20px;
-  color: #999999;
+  color: white;
 }
 .shopping-cart-detail {
-  color: #999999;
+  color: white;
 }
 .shopping-cart-text {
   color: #ccc;
@@ -260,7 +260,7 @@ export default {
   margin-bottom: 15px;
 }
 .shopping-cart-null span {
-  color: #999999;
+  color: white;
   font-size: 12px;
   line-height: 16px;
 }
