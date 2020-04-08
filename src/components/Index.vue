@@ -364,12 +364,14 @@ export default {
 .item-content-top {
   width: 100%;
   height: 260px;
+  display: flex;
+  justify-content: space-between;
 }
 .item-big-img {
-  width: 15vw;
+  width: 16vw;
   height: 260px;
   overflow: hidden;
-  float: left;
+  /* float: left; */
 }
 .item-big-img img {
   margin-left: 0px;
@@ -393,7 +395,7 @@ export default {
   transition: margin-left 0.3s;
 }
 .item-four-detail {
-  width: 152px;
+  width: 185px;
   height: 130px;
   margin-left: -1px;
   float: left;
@@ -407,7 +409,7 @@ export default {
   border-left: 1px solid #ccc;
 }
 .item-four-detail-text {
-  width: 50px;
+  width: 75px;
   margin-left: 5px;
   margin-top: 15px;
   float: left;
