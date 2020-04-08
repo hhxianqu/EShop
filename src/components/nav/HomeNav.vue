@@ -100,7 +100,7 @@
       </div>
     </div>
     <transition name="fade">
-      <div class="detail-item-panel panel-1" :duration="{ enter: 100, leave: 100 }" v-show="panel1" @mouseenter="showDetail(1)" ref="itemPanel1" @mouseleave="hideDetail(1)">
+      <div class="detail-item-panel panel-1" :duration="{ enter: 200, leave: 200 }" v-show="panel1" @mouseenter="showDetail(1)" ref="itemPanel1" @mouseleave="hideDetail(1)">
         <div class="nav-detail-item">
           <span v-for="(item, index) in panelData1.navTags" :key="index">{{item}} > </span>
         </div>
@@ -117,7 +117,7 @@
       </div>
     </transition>
     <transition name="fade">
-      <div class="detail-item-panel panel-2" :duration="{ enter: 100, leave: 100 }" v-show="panel2" @mouseenter="showDetail(2)" ref="itemPanel2" @mouseleave="hideDetail(2)">
+      <div class="detail-item-panel panel-2" :duration="{ enter: 200, leave: 200 }" v-show="panel2" @mouseenter="showDetail(2)" ref="itemPanel2" @mouseleave="hideDetail(2)">
         <div class="nav-detail-item">
           <span v-for="(item, index) in panelData2.navTags" :key="index">{{item}} > </span>
         </div>
@@ -346,7 +346,7 @@ export default {
 
 /*导航内容*/
 .nav-content {
-  width: 66vw;
+  width: 60vw;
   margin-left: 2vw;
   overflow: hidden;
   float: left;
