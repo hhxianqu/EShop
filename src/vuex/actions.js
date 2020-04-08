@@ -720,13 +720,23 @@ export const addSignUpUser = ({ commit }, data) => {
 
 // 用户登录
 export const login = ({ commit }, data) => {
-  return new Promise((resolve, reject) => {
-    if (data.username === 'Gavin' && data.password === '123456') {
-      localStorage.setItem('loginInfo', JSON.stringify(data));
-      commit('SET_USER_LOGIN_INFO', data);
-      resolve(true);
-      return true;
-    }
+  const promise =new Promise((resolve, reject) => {
+     fetch(`172.19.240.59:7085/login`, {
+          method: 'GET',
+          mode: "cors",
+          headers: new Headers({
+              'Content-Type': 'application/json',
+              'Access-Control-Allow-Origin': '*',
+          }),
+  
+      }).then(res => res.json()).then((json) => {
+        localStorage.setItem('loginInfo', JSON.stringify(data));
+        commit('SET_USER_LOGIN_INFO', data);
+        resolve(true);
+          return json
+      }).catch((err) => {
+          return err
+      })
     const userArr = localStorage.getItem('users');
     console.log(userArr);
     if (userArr) {
@@ -739,11 +749,14 @@ export const login = ({ commit }, data) => {
           break;
         }
       }
+    
     } else {
       resolve(false);
     }
   });
+  return promise;
 };
+
 
 // 退出登陆
 export const signOut = ({ commit }) => {
